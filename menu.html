@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website HTML and CSS | CodingNepal</title>
+    <link rel="stylesheet" href="menu.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lobster&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="#">DejĀBru</a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="indexxxx.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="https://maps.app.goo.gl/jFaBNobFfNQypgC99">Location</a></li>
+                <li><a href="https://www.zomato.com/ncr/deja-bru-cafe-janakpuri-new-delhi/order">Order Online</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="content">
+            <a class="images">
+                <h1>Menu of the Cafe</h1>
+                <img src="img/menu_2.jpg" width="55%" height="30%"
+                    style="padding-top: 10px; margin-top: 5px; margin-left: 100px; " alt="Page 1 of the Menu">
+                <!-- <img src="img/menu_2.jpg" width="55%" height="30%"
+                    style="padding-top: 10px; margin-top: 0px; margin-left: 700px;" alt="Page 2 of the Menu"> -->
+            </a>
+        </div>
+    </section>
+
+    <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+        // Toggle mobile menu on hamburger button click
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+        // Close mobile menu on close button click
+        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    <footer>
+        <p> Address : Ganesh Nagar, Shivaji Marg,
+            B2A Block, Block B 2B, Janakpuri,
+            New Delhi, Delhi-110058Ⓒ<br>
+            Phn No : +91 7042089484<br>
+        </p>
+        <i class="fa fa-instagram "style="color: white;">
+            <span> : </span>
+        </i>
+        <a href=" https://www.instagram.com/dejabrucafe1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="color: white;">
+            dejabrucafe1
+        </a>
+        </p>
+
+    </footer>
+</body>
+
+</html>
